@@ -1,0 +1,7 @@
+requests==2.31.0
+mangum
+fastapi==0.99.0
+sqlalchemy
+bcrypt
+PyJWT
+psycopg2-binary

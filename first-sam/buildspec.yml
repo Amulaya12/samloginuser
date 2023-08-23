@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - aws cloudformation package --template-file template.yml --s3-bucket samdeploybucket12 --output-template-file packaged.yml
+artifacts:
+  type: zip
+  files:
+    - template.yml
+    - packaged.yml
